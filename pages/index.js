@@ -1,4 +1,4 @@
-import Kalkulator from "@/src/asset/img/components";
+import Kalkulator from "@/src/components";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function Home() {
