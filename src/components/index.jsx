@@ -50,6 +50,7 @@ const Kalkulator = () => {
               <Image className="logoBs" src={logo} alt="logo" />
             </div>
             <div className="cardNew  ">
+              <h2 className="text-center titleJdl">Calculator Ukuran Buku</h2>
               <div className="card-body">
                 <p class="text-start textNew">
                   Hasil ketebalan punggung buku :
@@ -202,14 +203,14 @@ const Kalkulator = () => {
                 </div>
               </div>
 
-              <div class="d-flex justify-content-center">
+              {/* <div class="d-flex justify-content-center">
                 <p className="AlesPixie mb-0 mt-3">build with love ❤️</p>
               </div>
               <div class="d-flex justify-content-center ">
                 <p className="AlesPixie mb-0 ">
                   Developer by Zulfikar Ramadhan with Ales
                 </p>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
