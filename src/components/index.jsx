@@ -203,10 +203,10 @@ const Kalkulator = () => {
                 </div>
               </div>
 
-              {/* <div class="d-flex justify-content-center">
+              <div class="d-flex justify-content-center">
                 <p className="AlesPixie mb-0 mt-3">build with love ❤️</p>
               </div>
-              <div class="d-flex justify-content-center ">
+              {/* <div class="d-flex justify-content-center ">
                 <p className="AlesPixie mb-0 ">
                   Developer by Zulfikar Ramadhan with Ales
                 </p>

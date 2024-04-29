@@ -156,7 +156,6 @@ input.form-control.form-control-sm {
 }
 input#jumhal {
   background: #f2f4f7;
-  font-size: 10px;
 }
 .AlesPixie {
     font-size: 10px;
@@ -170,7 +169,7 @@ input#jumhal {
 }
 
 label.float-left {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: bold;
 }
 
