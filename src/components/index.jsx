@@ -27,6 +27,16 @@ const Kalkulator = () => {
         calc = (a * 0.15) / 2;
       } else if (value === "ac210") {
         calc = (a * 0.22) / 2;
+      } else if (value === "ac260") {
+        calc = (a * 0.28) / 2;
+      } else if (value === "ac310") {
+        calc = (a * 0.36) / 2;
+      } else if (value === "ac400") {
+        calc = (a * 0.55) / 2;
+      } else if (value === "ivory300") {
+        calc = (a * 0.4) / 2;
+      } else if (value === "ivory360") {
+        calc = (a * 0.5) / 2;
       }
       setHasil(calc);
     } else {
@@ -45,7 +55,7 @@ const Kalkulator = () => {
     <>
       <div className="container">
         <div className="row centered">
-          <div className="col-md-6">
+          <div className="col-md-8">
             <div class="d-flex p-2 bd-highlight justify-content-center">
               <Image className="logoBs" src={logo} alt="logo" />
             </div>
@@ -197,6 +207,85 @@ const Kalkulator = () => {
                       <div className="hobbies-icon">
                         <Image src={papper} width={50} alt="papper" />
                         <h3 className="">Art Cartoon 210gr</h3>
+                      </div>
+                    </span>
+                  </label>
+                  {/* batas tambahan*/}
+                  <label className="custom-radio">
+                    <input
+                      type="radio"
+                      value="ac260"
+                      name="bahan"
+                      onChange={(e) => hitung(e.target.value)}
+                    />
+                    <span className="radio-btn">
+                      <i className="las la-check" />
+                      <div className="hobbies-icon">
+                        <Image src={papper} width={50} alt="papper" />
+                        <h3 className="">Art Carton 260</h3>
+                      </div>
+                    </span>
+                  </label>
+                  {/* batas tambahan*/}
+                  <label className="custom-radio">
+                    <input
+                      type="radio"
+                      value="ac310"
+                      name="bahan"
+                      onChange={(e) => hitung(e.target.value)}
+                    />
+                    <span className="radio-btn">
+                      <i className="las la-check" />
+                      <div className="hobbies-icon">
+                        <Image src={papper} width={50} alt="papper" />
+                        <h3 className="">Art Carton 310</h3>
+                      </div>
+                    </span>
+                  </label>
+                  {/* batas tambahan*/}
+                  <label className="custom-radio">
+                    <input
+                      type="radio"
+                      value="ac400"
+                      name="bahan"
+                      onChange={(e) => hitung(e.target.value)}
+                    />
+                    <span className="radio-btn">
+                      <i className="las la-check" />
+                      <div className="hobbies-icon">
+                        <Image src={papper} width={50} alt="papper" />
+                        <h3 className="">Art Carton 400</h3>
+                      </div>
+                    </span>
+                  </label>
+                  {/* batas tambahan*/}
+                  <label className="custom-radio">
+                    <input
+                      type="radio"
+                      value="ivory300"
+                      name="bahan"
+                      onChange={(e) => hitung(e.target.value)}
+                    />
+                    <span className="radio-btn">
+                      <i className="las la-check" />
+                      <div className="hobbies-icon">
+                        <Image src={papper} width={50} alt="papper" />
+                        <h3 className="">IVORY 300</h3>
+                      </div>
+                    </span>
+                  </label>
+                  <label className="custom-radio">
+                    <input
+                      type="radio"
+                      value="ivory360"
+                      name="bahan"
+                      onChange={(e) => hitung(e.target.value)}
+                    />
+                    <span className="radio-btn">
+                      <i className="las la-check" />
+                      <div className="hobbies-icon">
+                        <Image src={papper} width={50} alt="papper" />
+                        <h3 className="">IVORY 360</h3>
                       </div>
                     </span>
                   </label>

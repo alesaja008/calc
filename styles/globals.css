@@ -66,10 +66,7 @@ body {
   transition: 0.5s;
   pointer-events: none;
   opacity: 0;
-  -webkit-transform: translateX(-50%) scale(2);
-  -moz-transform: translateX(-50%) scale(2);
-  -ms-transform: translateX(-50%) scale(2);
-  -o-transform: translateX(-50%) scale(2);
+
 }
 
 .radio-btn .hobbies-icon 
