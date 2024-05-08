@@ -37,6 +37,16 @@ const Kalkulator = () => {
         calc = (a * 0.4) / 2;
       } else if (value === "ivory360") {
         calc = (a * 0.5) / 2;
+      } else if (value === "corugtCoklat") {
+        calc = (a * 2.1) / 2;
+      } else if (value === "corugtWhite") {
+        calc = (a * 1.7) / 2;
+      } else if (value === "fmb10mm") {
+        calc = (a * 10.18) / 2;
+      } else if (value === "fmb5mm") {
+        calc = (a * 5.12) / 2;
+      } else if (value === "infraBoard5") {
+        calc = (a * 5.15) / 2;
       }
       setHasil(calc);
     } else {
@@ -55,8 +65,8 @@ const Kalkulator = () => {
     <>
       <div className="container">
         <div className="row centered">
-          <div className="col-md-8">
-            <div class="d-flex p-2 bd-highlight justify-content-center">
+          <div className="col-lg-10">
+            <div class="d-flex  bd-highlight justify-content-center">
               <Image className="logoBs" src={logo} alt="logo" />
             </div>
             <div className="cardNew  ">
@@ -286,6 +296,92 @@ const Kalkulator = () => {
                       <div className="hobbies-icon">
                         <Image src={papper} width={50} alt="papper" />
                         <h3 className="">IVORY 360</h3>
+                      </div>
+                    </span>
+                  </label>
+                  <label className="custom-radio">
+                    <input
+                      type="radio"
+                      value="corugtCoklat"
+                      name="bahan"
+                      onChange={(e) => hitung(e.target.value)}
+                    />
+                    <span className="radio-btn">
+                      <i className="las la-check" />
+                      <div className="hobbies-icon">
+                        <Image src={papper} width={50} alt="papper" />
+                        <h3 className="">
+                          Corugated Wall <br />2 mm Coklat
+                        </h3>
+                      </div>
+                    </span>
+                  </label>
+                  <label className="custom-radio">
+                    <input
+                      type="radio"
+                      value="corugtWhite"
+                      name="bahan"
+                      onChange={(e) => hitung(e.target.value)}
+                    />
+                    <span className="radio-btn">
+                      <i className="las la-check" />
+                      <div className="hobbies-icon">
+                        <Image src={papper} width={50} alt="papper" />
+                        <h3 className="">
+                          Corugated Wall <br />2 mm Putih
+                        </h3>
+                      </div>
+                    </span>
+                  </label>
+                  <label className="custom-radio">
+                    <input
+                      type="radio"
+                      value="fmb10mm"
+                      name="bahan"
+                      onChange={(e) => hitung(e.target.value)}
+                    />
+                    <span className="radio-btn">
+                      <i className="las la-check" />
+                      <div className="hobbies-icon">
+                        <Image src={papper} width={50} alt="papper" />
+                        <h3 className="">
+                          Foamboard <br />
+                          10 mm
+                        </h3>
+                      </div>
+                    </span>
+                  </label>
+                  <label className="custom-radio">
+                    <input
+                      type="radio"
+                      value="fmb5mm"
+                      name="bahan"
+                      onChange={(e) => hitung(e.target.value)}
+                    />
+                    <span className="radio-btn">
+                      <i className="las la-check" />
+                      <div className="hobbies-icon">
+                        <Image src={papper} width={50} alt="papper" />
+                        <h3 className="">
+                          Foamboard <br />5 mm
+                        </h3>
+                      </div>
+                    </span>
+                  </label>
+                  <label className="custom-radio">
+                    <input
+                      type="radio"
+                      value="infraBoard5"
+                      name="bahan"
+                      onChange={(e) => hitung(e.target.value)}
+                    />
+                    <span className="radio-btn">
+                      <i className="las la-check" />
+                      <div className="hobbies-icon">
+                        <Image src={papper} width={50} alt="papper" />
+                        <h3 className="">
+                          Infraboard <br />5 mm
+                        </h3>
                       </div>
                     </span>
                   </label>
