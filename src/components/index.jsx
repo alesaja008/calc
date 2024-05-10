@@ -180,7 +180,7 @@ const Kalkulator = () => {
                       <i className="las la-check" />
                       <div className="hobbies-icon">
                         <Image src={papper} width={50} alt="papper" />
-                        <h3 className="">Matte Paper 120grr</h3>
+                        <h3 className="">Matte Paper 120gr</h3>
                       </div>
                     </span>
                   </label>
