@@ -28,25 +28,19 @@ const Kalkulator = () => {
       } else if (value === "ac210") {
         calc = (a * 0.22) / 2;
       } else if (value === "ac260") {
-        calc = (a * 0.28) / 2;
-      } else if (value === "ac310") {
-        calc = (a * 0.36) / 2;
-      } else if (value === "ac400") {
-        calc = (a * 0.55) / 2;
-      } else if (value === "ivory300") {
-        calc = (a * 0.4) / 2;
-      } else if (value === "ivory360") {
-        calc = (a * 0.5) / 2;
-      } else if (value === "corugtCoklat") {
-        calc = (a * 2.1) / 2;
-      } else if (value === "corugtWhite") {
-        calc = (a * 1.7) / 2;
-      } else if (value === "fmb10mm") {
-        calc = (a * 10.18) / 2;
-      } else if (value === "fmb5mm") {
-        calc = (a * 5.12) / 2;
-      } else if (value === "infraBoard5") {
-        calc = (a * 5.15) / 2;
+        calc = (a * 0.31) / 2;
+      } else if (value === "bp90") {
+        calc = (a * 0.2) / 2;
+      } else if (value === "m125") {
+        calc = (a * 0.14) / 2;
+      } else if (value === "es148") {
+        calc = (a * 0.18) / 2;
+      } else if (value === "vl116") {
+        calc = (a * 0.14) / 2;
+      } else if (value === "sew160") {
+        calc = (a * 0.29) / 2;
+      } else if (value === "bc190") {
+        calc = (a * 0.27) / 2;
       }
       setHasil(calc);
     } else {
@@ -65,12 +59,12 @@ const Kalkulator = () => {
     <>
       <div className="container">
         <div className="row centered">
-          <div className="col-lg-10">
+          <div className="col-lg-7">
             <div class="d-flex  bd-highlight justify-content-center">
               <Image className="logoBs" src={logo} alt="logo" />
             </div>
             <div className="cardNew  ">
-              <h2 className="text-center titleJdl">Calculator Ukuran Buku</h2>
+              {/* <h2 className="text-center titleJdl">Calculator Ukuran Buku</h2> */}
               <div className="card-body">
                 <p class="text-start textNew">
                   Hasil ketebalan punggung buku :
@@ -220,7 +214,7 @@ const Kalkulator = () => {
                       </div>
                     </span>
                   </label>
-                  {/* batas tambahan*/}
+
                   <label className="custom-radio">
                     <input
                       type="radio"
@@ -232,77 +226,16 @@ const Kalkulator = () => {
                       <i className="las la-check" />
                       <div className="hobbies-icon">
                         <Image src={papper} width={50} alt="papper" />
-                        <h3 className="">Art Carton 260</h3>
+                        <h3 className="">Art Carton 260 Gsm</h3>
                       </div>
                     </span>
                   </label>
-                  {/* batas tambahan*/}
+
+                  {/* batas tambahan benar*/}
                   <label className="custom-radio">
                     <input
                       type="radio"
-                      value="ac310"
-                      name="bahan"
-                      onChange={(e) => hitung(e.target.value)}
-                    />
-                    <span className="radio-btn">
-                      <i className="las la-check" />
-                      <div className="hobbies-icon">
-                        <Image src={papper} width={50} alt="papper" />
-                        <h3 className="">Art Carton 310</h3>
-                      </div>
-                    </span>
-                  </label>
-                  {/* batas tambahan*/}
-                  <label className="custom-radio">
-                    <input
-                      type="radio"
-                      value="ac400"
-                      name="bahan"
-                      onChange={(e) => hitung(e.target.value)}
-                    />
-                    <span className="radio-btn">
-                      <i className="las la-check" />
-                      <div className="hobbies-icon">
-                        <Image src={papper} width={50} alt="papper" />
-                        <h3 className="">Art Carton 400</h3>
-                      </div>
-                    </span>
-                  </label>
-                  {/* batas tambahan*/}
-                  <label className="custom-radio">
-                    <input
-                      type="radio"
-                      value="ivory300"
-                      name="bahan"
-                      onChange={(e) => hitung(e.target.value)}
-                    />
-                    <span className="radio-btn">
-                      <i className="las la-check" />
-                      <div className="hobbies-icon">
-                        <Image src={papper} width={50} alt="papper" />
-                        <h3 className="">IVORY 300</h3>
-                      </div>
-                    </span>
-                  </label>
-                  <label className="custom-radio">
-                    <input
-                      type="radio"
-                      value="ivory360"
-                      name="bahan"
-                      onChange={(e) => hitung(e.target.value)}
-                    />
-                    <span className="radio-btn">
-                      <i className="las la-check" />
-                      <div className="hobbies-icon">
-                        <Image src={papper} width={50} alt="papper" />
-                        <h3 className="">IVORY 360</h3>
-                      </div>
-                    </span>
-                  </label>
-                  <label className="custom-radio">
-                    <input
-                      type="radio"
-                      value="corugtCoklat"
+                      value="bp90"
                       name="bahan"
                       onChange={(e) => hitung(e.target.value)}
                     />
@@ -311,7 +244,8 @@ const Kalkulator = () => {
                       <div className="hobbies-icon">
                         <Image src={papper} width={50} alt="papper" />
                         <h3 className="">
-                          Corugated Wall <br />2 mm Coklat
+                          Book paper Lux <br />
+                          Cream 90 Gsm
                         </h3>
                       </div>
                     </span>
@@ -319,7 +253,22 @@ const Kalkulator = () => {
                   <label className="custom-radio">
                     <input
                       type="radio"
-                      value="corugtWhite"
+                      value="m125"
+                      name="bahan"
+                      onChange={(e) => hitung(e.target.value)}
+                    />
+                    <span className="radio-btn">
+                      <i className="las la-check" />
+                      <div className="hobbies-icon">
+                        <Image src={papper} width={50} alt="papper" />
+                        <h3 className="">Manington 125 Gsm</h3>
+                      </div>
+                    </span>
+                  </label>
+                  <label className="custom-radio">
+                    <input
+                      type="radio"
+                      value="es148"
                       name="bahan"
                       onChange={(e) => hitung(e.target.value)}
                     />
@@ -328,7 +277,8 @@ const Kalkulator = () => {
                       <div className="hobbies-icon">
                         <Image src={papper} width={50} alt="papper" />
                         <h3 className="">
-                          Corugated Wall <br />2 mm Putih
+                          Everyday Smoot <br />
+                          White 148 Gsm
                         </h3>
                       </div>
                     </span>
@@ -336,7 +286,22 @@ const Kalkulator = () => {
                   <label className="custom-radio">
                     <input
                       type="radio"
-                      value="fmb10mm"
+                      value="vl116"
+                      name="bahan"
+                      onChange={(e) => hitung(e.target.value)}
+                    />
+                    <span className="radio-btn">
+                      <i className="las la-check" />
+                      <div className="hobbies-icon">
+                        <Image src={papper} width={50} alt="papper" />
+                        <h3 className="">Via linen 116 Gsm</h3>
+                      </div>
+                    </span>
+                  </label>
+                  <label className="custom-radio">
+                    <input
+                      type="radio"
+                      value="sew160"
                       name="bahan"
                       onChange={(e) => hitung(e.target.value)}
                     />
@@ -345,8 +310,8 @@ const Kalkulator = () => {
                       <div className="hobbies-icon">
                         <Image src={papper} width={50} alt="papper" />
                         <h3 className="">
-                          Foamboard <br />
-                          10 mm
+                          Splendorgel Extra <br />
+                          White 160 Gsm
                         </h3>
                       </div>
                     </span>
@@ -354,7 +319,7 @@ const Kalkulator = () => {
                   <label className="custom-radio">
                     <input
                       type="radio"
-                      value="fmb5mm"
+                      value="bc190"
                       name="bahan"
                       onChange={(e) => hitung(e.target.value)}
                     />
@@ -362,26 +327,7 @@ const Kalkulator = () => {
                       <i className="las la-check" />
                       <div className="hobbies-icon">
                         <Image src={papper} width={50} alt="papper" />
-                        <h3 className="">
-                          Foamboard <br />5 mm
-                        </h3>
-                      </div>
-                    </span>
-                  </label>
-                  <label className="custom-radio">
-                    <input
-                      type="radio"
-                      value="infraBoard5"
-                      name="bahan"
-                      onChange={(e) => hitung(e.target.value)}
-                    />
-                    <span className="radio-btn">
-                      <i className="las la-check" />
-                      <div className="hobbies-icon">
-                        <Image src={papper} width={50} alt="papper" />
-                        <h3 className="">
-                          Infraboard <br />5 mm
-                        </h3>
+                        <h3 className="">Karton BC 190 Gsm</h3>
                       </div>
                     </span>
                   </label>

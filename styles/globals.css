@@ -55,7 +55,7 @@ body {
 
 .radio-btn > i {
   color: #ffffff;
-  background-color: #b6d3fd;
+  background-color: #dc354561;
   font-size: 20px;
   position: absolute;
   top: 5px;
@@ -103,7 +103,7 @@ body {
 
 .custom-radio input:checked + .radio-btn 
 {
-    border: 2px solid #b6d3fd;
+  border: 2px solid #dc354561;
 }
 
 .custom-radio input:checked + .radio-btn > i 
